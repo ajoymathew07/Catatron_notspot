@@ -3,5 +3,8 @@
     <!-- Robot controller -->
     <node pkg="notspot_controller" type="robot_controller_gazebo.py"
         name="ROBOT_CONTROLLER" output="screen"/>
+          <!-- Drive Node -->
+    <node pkg="notspot_controller" type="driver.py"
+        name="DRIVER_NODE" output="screen"/>
 
 </launch>
