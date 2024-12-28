@@ -33,9 +33,7 @@ set_servo_angle(4,90)
 set_servo_angle(5,90)
 set_servo_angle(6,90)
 set_servo_angle(7,90)
-
-
-        
-
-        
-
+set_servo_angle(8,0)
+set_servo_angle(9,90)
+set_servo_angle(10,90)
+set_servo_angle(11,90)
