@@ -57,11 +57,12 @@ class RobotDriverNode:
 
     def update_servo(self, joint_index, angle):
         """Update the servo position based on joint angle."""
-	angle_degrees=math.degrees(angle)
-        # Convert angle (e.g., -90 to 90 degrees) to PWM pulse (e.g., 150 to 600 for PCA9685)
+        angle_degrees=math.degrees(angle)
+        print(angle_degrees)
+        #angle_degrees+=90.0;
         min_pulse = 150
         max_pulse = 600
-        pulse = int(min_pulse + (angle_degrees + 90) / 180.0 * (max_pulse - min_pulse))
+        pulse = int(min_pulse + (angle_degrees + 90) / 180.0 *(max_pulse - min_pulse))
         self.pwm.set_pwm(joint_index, 0, pulse)
 
     def calculate_orientation(self, accel, gyro):
