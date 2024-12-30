@@ -18,9 +18,9 @@ class RobotDriverNode:
         self.pwm = Adafruit_PCA9685.PCA9685()
         self.pwm.set_pwm_freq(50)  # Set frequency to 50 Hz for servos
 
-        # Initialize MPU6050 sensor
-        self.imu = mpu6050(0x68)  # Default I2C address of MPU6050
-        rospy.loginfo("MPU6050 initialized successfully.")
+        # # Initialize MPU6050 sensor
+        # self.imu = mpu6050(0x68)  # Default I2C address of MPU6050
+        # rospy.loginfo("MPU6050 initialized successfully.")
 
         # Joint angles (12 servos assumed)
         self.joint_angles = [0] * 12  # Initial positions
@@ -44,11 +44,11 @@ class RobotDriverNode:
         for i, topic in enumerate(self.command_topics):
             rospy.Subscriber(topic, Float64, self.joint_command_callback, callback_args=i)
 
-        # Publish IMU data
-        self.imu_publisher = rospy.Publisher("notspot_imu/base_link_orientation", Imu, queue_size=10)
+        # # Publish IMU data
+        # self.imu_publisher = rospy.Publisher("notspot_imu/base_link_orientation", Imu, queue_size=10)
 
-        # Timer to read and publish IMU data
-        rospy.Timer(rospy.Duration(0.04), self.publish_imu_data)  # 25 Hz
+        # # Timer to read and publish IMU data
+        # rospy.Timer(rospy.Duration(0.04), self.publish_imu_data)  # 25 Hz
 
     def joint_command_callback(self, msg, joint_index):
         """Callback for receiving joint angles."""
