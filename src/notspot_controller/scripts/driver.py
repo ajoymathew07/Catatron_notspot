@@ -57,9 +57,9 @@ class RobotDriverNode:
 
     def update_servo(self, joint_index, angle):
         """Update the servo position based on joint angle."""
-        print(f"angle received are :{angle}")
+        # print(f"angle received are :{angle}")
         angle_degrees=math.degrees(angle)
-        print(angle_degrees)
+        # print(angle_degrees)
         #angle_degrees+=90.0;
         min_pulse = 150
         max_pulse = 600
