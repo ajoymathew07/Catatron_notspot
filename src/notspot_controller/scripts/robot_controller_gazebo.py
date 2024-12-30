@@ -64,7 +64,7 @@ while not rospy.is_shutdown():
     try:
         joint_angles = inverseKinematics.inverse_kinematics(leg_positions,
                                dx, dy, dz, roll, pitch, yaw)
-        print(joint_angles)
+        # print(joint_angles)
         for i in range(len(joint_angles)):
             
             publishers[i].publish(joint_angles[i])
