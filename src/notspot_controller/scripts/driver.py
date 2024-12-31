@@ -24,7 +24,7 @@ class RobotDriverNode:
 
         # Joint angles (12 servos assumed)
         self.joint_angles = [0] * 12  # Initial positions
-        self.sign=[1,1,1,1,-1,-1,1,1,1,1,-1,-1]
+        self.sign=[1,-1,1,1,1,-1,1,-1,1,1,1,-1]
 
         # Subscribe to joint command topics
         self.command_topics = [
