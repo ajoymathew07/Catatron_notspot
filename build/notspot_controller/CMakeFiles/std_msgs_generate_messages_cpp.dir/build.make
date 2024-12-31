@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sudharsan/Documents/drive/Catatron_notspot/src
+CMAKE_SOURCE_DIR = /home/pi/Documents/Catatron_notspot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sudharsan/Documents/drive/Catatron_notspot/build
+CMAKE_BINARY_DIR = /home/pi/Documents/Catatron_notspot/build
 
 # Utility rule file for std_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build: std_msgs
 .PHONY : notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 
 notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build/notspot_controller && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/pi/Documents/Catatron_notspot/build/notspot_controller && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sudharsan/Documents/drive/Catatron_notspot/src /home/sudharsan/Documents/drive/Catatron_notspot/src/notspot_controller /home/sudharsan/Documents/drive/Catatron_notspot/build /home/sudharsan/Documents/drive/Catatron_notspot/build/notspot_controller /home/sudharsan/Documents/drive/Catatron_notspot/build/notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/Documents/Catatron_notspot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Documents/Catatron_notspot/src /home/pi/Documents/Catatron_notspot/src/notspot_controller /home/pi/Documents/Catatron_notspot/build /home/pi/Documents/Catatron_notspot/build/notspot_controller /home/pi/Documents/Catatron_notspot/build/notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : notspot_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 

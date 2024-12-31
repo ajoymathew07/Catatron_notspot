@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sudharsan/Documents/drive/Catatron_notspot/src
+CMAKE_SOURCE_DIR = /home/pi/Documents/Catatron_notspot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sudharsan/Documents/drive/Catatron_notspot/build
+CMAKE_BINARY_DIR = /home/pi/Documents/Catatron_notspot/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ notspot_description/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_
 .PHONY : notspot_description/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 notspot_description/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build/notspot_description && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/pi/Documents/Catatron_notspot/build/notspot_description && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : notspot_description/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 notspot_description/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sudharsan/Documents/drive/Catatron_notspot/src /home/sudharsan/Documents/drive/Catatron_notspot/src/notspot_description /home/sudharsan/Documents/drive/Catatron_notspot/build /home/sudharsan/Documents/drive/Catatron_notspot/build/notspot_description /home/sudharsan/Documents/drive/Catatron_notspot/build/notspot_description/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/Documents/Catatron_notspot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Documents/Catatron_notspot/src /home/pi/Documents/Catatron_notspot/src/notspot_description /home/pi/Documents/Catatron_notspot/build /home/pi/Documents/Catatron_notspot/build/notspot_description /home/pi/Documents/Catatron_notspot/build/notspot_description/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : notspot_description/CMakeFiles/_catkin_empty_exported_target.dir/depend
 
