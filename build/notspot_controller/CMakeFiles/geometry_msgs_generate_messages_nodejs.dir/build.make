@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Documents/Catatron_notspot/src
+CMAKE_SOURCE_DIR = /home/sudharsan/Documents/drive/Catatron_notspot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Documents/Catatron_notspot/build
+CMAKE_BINARY_DIR = /home/sudharsan/Documents/drive/Catatron_notspot/build
 
 # Utility rule file for geometry_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build: 
 .PHONY : notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 
 notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/pi/Documents/Catatron_notspot/build/notspot_controller && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/sudharsan/Documents/drive/Catatron_notspot/build/notspot_controller && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 
 notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/pi/Documents/Catatron_notspot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Documents/Catatron_notspot/src /home/pi/Documents/Catatron_notspot/src/notspot_controller /home/pi/Documents/Catatron_notspot/build /home/pi/Documents/Catatron_notspot/build/notspot_controller /home/pi/Documents/Catatron_notspot/build/notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sudharsan/Documents/drive/Catatron_notspot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sudharsan/Documents/drive/Catatron_notspot/src /home/sudharsan/Documents/drive/Catatron_notspot/src/notspot_controller /home/sudharsan/Documents/drive/Catatron_notspot/build /home/sudharsan/Documents/drive/Catatron_notspot/build/notspot_controller /home/sudharsan/Documents/drive/Catatron_notspot/build/notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : notspot_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
 

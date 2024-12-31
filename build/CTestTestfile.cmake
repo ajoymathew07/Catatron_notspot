@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/pi/Documents/Catatron_notspot/src
-# Build directory: /home/pi/Documents/Catatron_notspot/build
+# Source directory: /home/sudharsan/Documents/drive/Catatron_notspot/src
+# Build directory: /home/sudharsan/Documents/drive/Catatron_notspot/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
