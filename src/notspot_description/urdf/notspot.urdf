@@ -529,7 +529,7 @@
 	  </joint> -->
 	  <!-- JOINTS -->
 	  <joint name="FL1_joint" type="revolute">
-	    <axis xyz="1.000 0.000 0.000"/>
+	    <axis xyz="-1.000 0.000 0.000"/>
 	    <limit effort="1.4" lower="-0.78540" upper="1.57080" velocity="1.04720"/>
 	    <!-- <parent link="hip_fl_ref"/> -->
 	    <parent link="base_link"/>
@@ -537,21 +537,21 @@
 	    <origin xyz="0.09170 0.05355 -0.00279"/>
 	  </joint>
 	  <joint name="FR1_joint" type="revolute">
-	    <axis xyz="1.000 0.000 0.000"/>
+	    <axis xyz="-1.000 0.000 0.000"/>
 	    <limit effort="1.4" lower="-0.78540" upper="1.57080" velocity="1.04720"/>
 	    <parent link="base_link"/>
 	    <child link="FR1"/>
 	    <origin xyz="0.09170 -0.05355 -0.00279"/>
 	  </joint>
 	  <joint name="RL1_joint" type="revolute">
-	    <axis xyz="1.000 0.000 0.000"/>
+	    <axis xyz="-1.000 0.000 0.000"/>
 	    <limit effort="1.4" lower="-0.78540" upper="1.57080" velocity="1.04720"/>
 	    <parent link="base_link"/>
 	    <child link="RL1"/>
 	    <origin xyz="-0.09170 0.05355 -0.00279"/>
 	  </joint>
 	  <joint name="RR1_joint" type="revolute">
-	    <axis xyz="1.000 0.000 0.000"/>
+	    <axis xyz="-1.000 0.000 0.000"/>
 	    <limit effort="1.4" lower="-0.78540" upper="1.57080" velocity="1.04720"/>
 	    <parent link="base_link"/>
 	    <child link="RR1"/>
