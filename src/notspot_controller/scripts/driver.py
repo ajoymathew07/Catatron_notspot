@@ -8,6 +8,8 @@ from mpu6050 import mpu6050  # Library to interface with MPU6050
 import math
 import tf.transformations as tf
 
+from RobotController import RestController
+
 
 class RobotDriverNode:
     def __init__(self):
@@ -51,6 +53,10 @@ class RobotDriverNode:
         # # Timer to read and publish IMU data
         # rospy.Timer(rospy.Duration(0.04), self.publish_imu_data)  # 25 Hz
 
+        self.rest_controller = RestController()
+        self.nod_timer = rospy.Timer(rospy.Duration(5), self.nod_callback)
+
+
     def joint_command_callback(self, msg, joint_index):
         """Callback for receiving joint angles."""
         self.joint_angles[joint_index] = msg.data
@@ -66,6 +72,17 @@ class RobotDriverNode:
         max_pulse = 600
         pulse = int(min_pulse + (angle_degrees + 90) / 180.0 *(max_pulse - min_pulse))
         self.pwm.set_pwm(joint_index, 0, pulse)
+    
+    def nod_callback(self, event):
+        """Perform a nodding motion."""
+        if self.rest_controller.Nod:
+            head_joint_index = 12  # Replace with the actual joint index for the head nod
+            nod_angles = [90,100,80,90]  # Replace with actual angles in degrees for nodding motion
+
+            # Simulate the nodding motion
+            for angle in nod_angles:
+                self.update_servo(head_joint_index,angle)
+                rospy.sleep(0.5)  # Delay between each movement
 
     def calculate_orientation(self, accel, gyro):
         """Calculate roll, pitch, and yaw from accelerometer and gyroscope data."""

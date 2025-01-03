@@ -1,11 +1,9 @@
 <launch>
 
-    <!-- Gazebo Simulation -->
+    <!-- Gazebo Simulation 
     <include file="$(find notspot_gazebo)/launch/simulation.launch" />
+    -->
     
-    
-    
-
     <!-- Joystick -->
     <include file="$(find notspot_joystick)/launch/ramped_joystick.launch" />
 

@@ -6,6 +6,7 @@ import numpy as np
 from RoboticsUtilities.Transformations import rotxyz
 from . PIDController import PID_controller
 
+
 class RestController(object):
     def __init__(self, default_stance):
         self.def_stance = default_stance
@@ -14,6 +15,7 @@ class RestController(object):
         #                                     kp     ki    kd
         self.pid_controller = PID_controller(0.75, 2.29, 0.0)
         self.use_imu = False
+        self.Nod= True
         self.use_button = True
         self.pid_controller.reset()
         
@@ -37,6 +39,16 @@ class RestController(object):
         if not self.use_button:
             if not (msg.buttons[7]):
                 self.use_button = True
+                
+        if self.Nod:
+            if msg.buttons[6]:
+                self.Nod = False
+                rospy.loginfo(f"Rest Controller - Nodding: {self.Nod}")
+        if not self.Nod:
+            if msg.buttons[6]:
+                self.Nod = True
+                rospy.loginfo(f"Rest Controller - Nodding: {self.Nod}")
+        
 
     @property
     def default_stance(self):
