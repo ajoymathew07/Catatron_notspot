@@ -80,9 +80,9 @@ class RobotDriverNode:
             nod_angles = [90,100,80,90]  # Replace with actual angles in degrees for nodding motion
 
             # Simulate the nodding motion
-            for angle in nod_angles:
-                self.update_servo(head_joint_index,angle)
-                rospy.sleep(0.5)  # Delay between each movement
+            # for angle in nod_angles:
+            #     self.update_servo(head_joint_index,angle)
+            #     rospy.sleep(0.5)  # Delay between each movement
 
     def calculate_orientation(self, accel, gyro):
         """Calculate roll, pitch, and yaw from accelerometer and gyroscope data."""
