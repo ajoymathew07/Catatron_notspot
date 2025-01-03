@@ -9,6 +9,7 @@ from . RestController import RestController
 from . TrotGaitController import TrotGaitController
 from . CrawlGaitController import CrawlGaitController
 from . StandController import StandController
+from . Display import Display
 
 class Robot(object):
     def __init__(self, body, legs, imu):
@@ -31,6 +32,7 @@ class Robot(object):
         self.standController = StandController(self.default_stance)
 
         self.restController = RestController(self.default_stance)
+        self.display = Display()
 
         self.currentController = self.restController
         self.state = State(self.default_height)
@@ -91,6 +93,12 @@ class Robot(object):
             self.command.crawl_event = False
             self.command.stand_event = True
             self.command.rest_event = False
+        elif msg.button[7]:
+            if not self.display.blink:
+                self.display.blink = True
+                self.display.eye_control()
+            else:
+                self.display.blink = False
       
         self.currentController.updateStateCommand(msg, self.state, self.command)
 

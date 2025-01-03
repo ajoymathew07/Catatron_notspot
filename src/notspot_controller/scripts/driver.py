@@ -26,7 +26,7 @@ class RobotDriverNode:
 
         # Joint angles (12 servos assumed)
         self.joint_angles = [0] * 12  # Initial positions
-        self.sign=[1,-1,1,1,1,-1,1,-1,1,1,1,-1]
+        self.sign=[-1,-1,1,-1,1,1,1,-1,1,1,1,1]
 
         # Subscribe to joint command topics
         self.command_topics = [
@@ -47,13 +47,13 @@ class RobotDriverNode:
         for i, topic in enumerate(self.command_topics):
             rospy.Subscriber(topic, Float64, self.joint_command_callback, callback_args=i)
 
-        # # Publish IMU data
-        # self.imu_publisher = rospy.Publisher("notspot_imu/base_link_orientation", Imu, queue_size=10)
+        # Publish IMU data
+        self.imu_publisher = rospy.Publisher("notspot_imu/base_link_orientation", Imu, queue_size=10)
 
-        # # Timer to read and publish IMU data
-        # rospy.Timer(rospy.Duration(0.04), self.publish_imu_data)  # 25 Hz
+        # Timer to read and publish IMU data
+        rospy.Timer(rospy.Duration(0.04), self.publish_imu_data)  # 25 Hz
 
-        self.rest_controller = RestController()
+        self.rest_controller = RestController.RestController()
         self.nod_timer = rospy.Timer(rospy.Duration(5), self.nod_callback)
 
 
