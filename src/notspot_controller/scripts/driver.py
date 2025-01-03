@@ -53,7 +53,7 @@ class RobotDriverNode:
         # # Timer to read and publish IMU data
         # rospy.Timer(rospy.Duration(0.04), self.publish_imu_data)  # 25 Hz
 
-        self.rest_controller = RestController.RestController()
+        self.rest_controller = RestController.RestController(0.15)
         self.nod_timer = rospy.Timer(rospy.Duration(5), self.nod_callback)
 
 
