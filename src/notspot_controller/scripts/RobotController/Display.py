@@ -21,7 +21,7 @@ class Display:
 
         # Initialize the SSD1306 OLED displays
         self.oled_1 = SSD1306_I2C(self.WIDTH, self.HEIGHT, i2c_1, addr=0x3C)  # First display at address 0x3C
-        self.oled_2 = SSD1306_I2C(self.WIDTH, self.HEIGHT, i2c_2, addr=0x3D)  # Second display at address 0x3D
+        self.oled_2 = SSD1306_I2C(self.WIDTH, self.HEIGHT, i2c_2, addr=0x3C)  # Second display at address 0x3D
         self.Open_Eye = True
 
         # Clear both displays
